@@ -4,8 +4,8 @@
 		"authors": [
 			"pazer"
 		],
-		"description": "Official rules list for TF2 Bot Detector.",
-		"title": "Official rules list",
+		"description": "Solhex's modified version of pazer's rules list for TF2 Bot Detector.",
+		"title": "Modified rules list",
 		"update_url": "https://raw.githubusercontent.com/Solhex/TF2-bot-detector-modified-rules/main/rules.official.json?token=AP3VJ5EVBZMUGCY7PZQYRAC7TQDBY"
 	},
 	"rules": [
