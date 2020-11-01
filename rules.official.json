@@ -353,9 +353,7 @@
 					"mode": "regex",
 					"patterns": [
 						"braaaap \\d+",
-						"spoooky braaaap \\d+",
-						"Scheduled Braaaap"
-						
+						"spoooky braaaap \\d+"
 					]
 				}
 			}
