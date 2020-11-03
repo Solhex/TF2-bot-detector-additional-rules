@@ -433,16 +433,26 @@
 					"racist"
 				]
 			},
-			"description": "Racism",
+			"description": "[Moeb]Racistism detected",
 			"triggers": {
 				"chatmsg_text_match": {
 					"case_sensitive": false,
-					"mode": "word",
+					"mode": "regex",
 					"patterns": [
-						"nigger",
+						"\\w*N󠀡󠀡IGGE󠀡󠀡R\\w*",
+						"\\w*ɴɪɢɢᴇʀ\\w*",
+						"\\w*nіggеr\\w*",
+						"\\w*NÍGGER\\w*",
+						"\\w*n\\\\|gger\\w*",
+						"\\w*niggеr\\w*",
+						"\\w*N1GG3R\\w*",
+						"\\w*nigger\\w*",
+						"\\w*nigg4\\w*",
+						"\\w*niggz\\w*",
 						"niggers"
 					]
-				}
+				},
+				"mode": "match_any"
 			}
 		}
 	]
