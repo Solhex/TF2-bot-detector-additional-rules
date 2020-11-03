@@ -328,7 +328,6 @@
 					"mode": "contains",
 					"patterns": [
 						"matchroom.live/snooker",
-						"I❤Snooker",
 						"I?Snooker"
 					]
 				}
