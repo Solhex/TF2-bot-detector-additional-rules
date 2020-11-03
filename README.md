@@ -22,8 +22,7 @@ Theres two ways of doing this either replacing the file or changing the original
 2. At the top left of the window theres a File tab click on it.
 3. The sub-menu should open up and then click Open Config Folder.
 4. Your File Explorer should open at the TF2BD cfg folder, open the old rules.official.json file.
-5. Go to line 9 and change the url to 
-https://raw.githubusercontent.com/Solhex/TF2-bot-detector-modified-rules/main/rules.official.json
+5. Go to line 9 and change the url to https://raw.githubusercontent.com/Solhex/TF2-bot-detector-modified-rules/main/rules.official.json
 6. Then go back to PazerOP's TF2-bot-detector and click Launch TF2.
 
 And thats all.
