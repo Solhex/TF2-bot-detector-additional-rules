@@ -7,7 +7,7 @@ use their version of the rules.official.json file I'll link their version below.
 PazerOP's TF2-bot-detector and well TF2.
 
 ### How can I use this version of the modified rules?
-Theres two ways of doing this either replacing the file or changing the original file's update url they basically do the same thing.
+Theres two ways of doing this either replacing the file or changing the original file's update url they basically do the same thing but its way more easier to just replace the file.
 
 #### Replacing the file
 1. Download the rules.official.json file.
@@ -15,14 +15,6 @@ Theres two ways of doing this either replacing the file or changing the original
 3. At the top left of the window theres a File tab click on it.
 4. The sub-menu should open up and then click Open Config Folder.
 5. Your File Explorer should open at the TF2BD cfg folder, replace the old rules.official.json with the new one.
-6. Then go back to PazerOP's TF2-bot-detector and click Launch TF2.
-
-#### Changing the update url
-1. Open PazerOP's TF2-bot-detector.
-2. At the top left of the window theres a File tab click on it.
-3. The sub-menu should open up and then click Open Config Folder.
-4. Your File Explorer should open at the TF2BD cfg folder, open the old rules.official.json file.
-5. Go to line 9 and change the url to https://raw.githubusercontent.com/Solhex/TF2-bot-detector-modified-rules/main/rules.official.json
 6. Then go back to PazerOP's TF2-bot-detector and click Launch TF2.
 
 And thats all.
