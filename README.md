@@ -7,7 +7,7 @@ use their version of the rules file and I'll link theirs version below.
 PazerOP's TF2-bot-detector and well TF2.
 
 ### How can I use this version of the modified rules?
-By adding it to the TF2BD cfg dir
+By adding it to the TF2BD cfg dir.
 
 #### Replacing the file
 1. Download the rules.official.json file.
