@@ -83,6 +83,31 @@
 		{
 			"actions": {
 				"mark": [
+					"cheater",
+					"racist"
+				]
+			},
+			"description": "NK",
+			"triggers": {
+				"avatar_match": [
+					{
+						"avatar_hash": "a03023b2361fb9aa7a94cf515425236255844c75"
+					}
+				],
+				"mode": "match_any",
+				"username_text_match": {
+					"case_sensitive": false,
+					"mode": "contains",
+					"patterns": [
+						"[VALVE]Niggerkiller",
+						"[VALVE]\u5350Niggerkiller\u534d"
+					]
+				}
+			}
+		},
+		{
+			"actions": {
+				"mark": [
 					"cheater"
 				]
 			},
@@ -121,6 +146,32 @@
 					"mode": "contains",
 					"patterns": [
 						"\\ u202C"
+					]
+				}
+			}
+		},
+		{
+			"actions": {
+				"mark": [
+					"cheater",
+					"racist"
+				]
+			},
+			"description": "[Link2006] NK",
+			"triggers": {
+				"avatar_match": [
+					{
+						"avatar_hash": "c35571183a64018d1eff01be6867cde37c2d5909"
+					}
+				],
+				"mode": "match_any",
+				"username_text_match": {
+					"case_sensitive": false,
+					"mode": "regex",
+					"patterns": [
+						"\\x4E\\x69\\x67\\x67\\x65\\x72killer",
+						"TF2 PLAYER = APE",
+						"\/id\/heinrichderpro"
 					]
 				}
 			}
