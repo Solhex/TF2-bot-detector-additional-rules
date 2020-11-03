@@ -376,8 +376,7 @@
 					"case_sensitive": false,
 					"mode": "contains",
 					"patterns": [
-						"GYPSY CRUSADER",
-						"Crusader"
+						"GYPSY CRUSADER"
 					]
 				}
 			}
