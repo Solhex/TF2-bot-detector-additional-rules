@@ -28,11 +28,13 @@ Theres two ways of doing this either replacing the file or changing the original
 And thats all.
 
 ### Recommended rule files
-The Original rules.official.json file by OPpazer
-https://github.com/PazerOP/tf2_bot_detector/blob/master/staging/cfg/rules.official.json
+The Original [rules.official.json][original-rules] file by OPpazer
 
-Link2006's rules.link2006.json
-https://gist.githubusercontent.com/Link2006/14afac0ebe7e8667b82b6d2cdf579a4d/raw/rules.link2006.json
+Link2006's [rules.link2006.json][Link2006-raw-rules]
 
-moebkun's rules.beta.json and rules.schema.json
-https://github.com/moebkun/lists
+moebkun's [rules.beta.json and rules.schema.json][moebkun-list]
+
+<!-- Links -->
+[moebkun-list]:https://github.com/moebkun/lists
+[original-rules]:https://github.com/PazerOP/tf2_bot_detector/blob/master/staging/cfg/rules.official.json
+[Link2006-raw-rules]:https://gist.githubusercontent.com/Link2006/14afac0ebe7e8667b82b6d2cdf579a4d/raw/rules.link2006.json
