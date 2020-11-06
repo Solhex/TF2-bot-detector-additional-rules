@@ -6,7 +6,7 @@
 		],
 		"description": "Solhex's rules list for TF2 Bot Detector, most of the code used here is from Link2006's and moebkun's rule list (please use theirs as I guarantee its way better) which are marked with their username.",
 		"title": "Modified rules list",
-		"update_url": "https://raw.githubusercontent.com/Solhex/TF2-bot-detector-modified-rules/main/rules.solhex.json"
+		"update_url": "https://raw.githubusercontent.com/Solhex/TF2-bot-detector-additional-rules/main/rules.solhex.json"
 	},
 	"rules": [
 		{
@@ -27,8 +27,7 @@
 					"case_sensitive": false,
 					"mode": "contains",
 					"patterns": [
-						"matchroom.live/snooker",
-						"I?Snooker"
+						"matchroom.live/snooker"
 					]
 				}
 			}
@@ -100,7 +99,8 @@
 					"mode": "contains",
 					"patterns": [
 						"[VALVE]Niggerkiller",
-						"[VALVE]\u5350Niggerkiller\u534d"
+						"[VALVE]\u5350Niggerkiller\u534d",
+						"[VALVE]\u5350Nigg0rkiller\u534d"
 					]
 				}
 			}
