@@ -12,6 +12,32 @@
 		{
 			"actions": {
 				"mark": [
+					"cheater",
+					"exploiter"
+				]
+			},
+			"description": "mattservice",
+			"triggers": {
+				"avatar_match": [
+					{
+						"avatar_hash": "da0346b6a074bab19e6743eaa4805d4b4ef28820"
+					}
+				],
+				"mode": "match_any",
+				"username_text_match": {
+					"case_sensitive": false,
+					"mode": "contains",
+					"patterns": [
+						"Matt is Donating!",
+						"Matt Gifts!",
+						"Matt Gift!"
+					]
+				}
+			}
+		},
+		{
+			"actions": {
+				"mark": [
 					"cheater"
 				]
 			},
@@ -108,6 +134,32 @@
 		{
 			"actions": {
 				"mark": [
+					"cheater",
+					"racist"
+				]
+			},
+			"description": "[Link2006] NK",
+			"triggers": {
+				"avatar_match": [
+					{
+						"avatar_hash": "c35571183a64018d1eff01be6867cde37c2d5909"
+					}
+				],
+				"mode": "match_any",
+				"username_text_match": {
+					"case_sensitive": false,
+					"mode": "regex",
+					"patterns": [
+						"\\x4E\\x69\\x67\\x67\\x65\\x72killer",
+						"TF2 PLAYER = APE",
+						"\/id\/heinrichderpro"
+					]
+				}
+			}
+		},
+		{
+			"actions": {
+				"mark": [
 					"cheater"
 				]
 			},
@@ -146,32 +198,6 @@
 					"mode": "contains",
 					"patterns": [
 						"\\ u202C"
-					]
-				}
-			}
-		},
-		{
-			"actions": {
-				"mark": [
-					"cheater",
-					"racist"
-				]
-			},
-			"description": "[Link2006] NK",
-			"triggers": {
-				"avatar_match": [
-					{
-						"avatar_hash": "c35571183a64018d1eff01be6867cde37c2d5909"
-					}
-				],
-				"mode": "match_any",
-				"username_text_match": {
-					"case_sensitive": false,
-					"mode": "regex",
-					"patterns": [
-						"\\x4E\\x69\\x67\\x67\\x65\\x72killer",
-						"TF2 PLAYER = APE",
-						"\/id\/heinrichderpro"
 					]
 				}
 			}
