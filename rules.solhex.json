@@ -163,6 +163,28 @@
 					"cheater"
 				]
 			},
+			"description": "[Link2006] 'Sydney' bots (Does not include 'Sydney' due to false-positives)",
+			"triggers": {
+				"mode": "match_any",
+				"username_text_match": {
+					"case_sensitive": true,
+					"mode": "contains",
+					"patterns": [
+						"Totally Not An Annoying Pony",
+						"Milenko Gaming",
+						"The Great Milenko",
+						"S\u0443dney",
+						"S\u0443dne\u0443"
+					]
+				}
+			}
+		},
+		{
+			"actions": {
+				"mark": [
+					"cheater"
+				]
+			},
 			"description": "[Link2006] NameSteal2",
 			"triggers": {
 				"username_text_match": {
