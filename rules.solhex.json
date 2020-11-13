@@ -12,6 +12,21 @@
 		{
 			"actions": {
 				"mark": [
+					"cheater"
+				]
+			},
+			"description": "Avatar Match",
+			"triggers": {
+				"avatar_match": [
+					{
+						"avatar_hash": "18541ade658c70e7d26211eb08e4bf394810bb87"
+					}
+				]
+				}
+		},
+		{
+			"actions": {
+				"mark": [
 					"cheater",
 					"exploiter"
 				]
