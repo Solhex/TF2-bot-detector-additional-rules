@@ -139,7 +139,7 @@
 					"case_sensitive": false,
 					"mode": "regex",
 					"patterns": [
-						"^\\[VALVE\\]\u5350?Nigg[\\de]rkiller\u534d?"
+						"^\\[VALVE\\]\u5350?N[\u00edi]gg[\\de]rkill[\\de]r\u534d?"
 					]
 				}
 			}
