@@ -27,6 +27,31 @@
 		{
 			"actions": {
 				"mark": [
+					"exploiter"
+				]
+			},
+			"description": "King of I Love You",
+			"triggers": {
+				"mode": "match_any",
+				"username_text_match": {
+					"case_sensitive": false,
+					"mode": "contains",
+					"patterns": [
+						"\u2665King of \"\u2665I Love You\u2665\" b"
+					]
+				},
+				"chatmsg_text_match": {
+					"case_sensitive": false,
+					"mode": "contains",
+					"patterns": [
+						"https://steamcommunity.com/groups/snipermainunited"
+					]
+				}
+			}
+		},
+		{
+			"actions": {
+				"mark": [
 					"cheater",
 					"exploiter"
 				]
