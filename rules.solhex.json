@@ -27,7 +27,7 @@
 		{
 			"actions": {
 				"mark": [
-					"exploiter"
+					"suspicious"
 				]
 			},
 			"description": "King of I Love You",
@@ -157,6 +157,9 @@
 				"avatar_match": [
 					{
 						"avatar_hash": "a03023b2361fb9aa7a94cf515425236255844c75"
+					},
+					{
+						"avatar_hash": "2e851a57882a08948474f149b8f5a61057529f9d"
 					}
 				],
 				"mode": "match_any",
@@ -164,7 +167,7 @@
 					"case_sensitive": false,
 					"mode": "regex",
 					"patterns": [
-						"^\\[VALVE\\]\u5350?N[\u00edi]gg[\\de]rkill[\\de]r\u534d?"
+						"[\u5350\u534d]?\\[VALVE\\][\u5350\u534d]?N[\u00edi]gg[\\de]rkill[\\de]r[\u5350\u534d]?"
 					]
 				}
 			}
