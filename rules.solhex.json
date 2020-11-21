@@ -66,11 +66,16 @@
 				"mode": "match_any",
 				"username_text_match": {
 					"case_sensitive": false,
+					"mode": "regex",
+					"patterns": [
+						"Matt ((is Donating!)|(Gifts?!))"
+					]
+				},
+				"chatmsg_text_match": {
+					"case_sensitive": false,
 					"mode": "contains",
 					"patterns": [
-						"Matt is Donating!",
-						"Matt Gifts!",
-						"Matt Gift!"
+						"HOW TO ADD: Steam->Community->Find People-> Matt Gift!"
 					]
 				}
 			}
@@ -116,8 +121,7 @@
 					"case_sensitive": false,
 					"mode": "regex",
 					"patterns": [
-						"braaaap \\d+",
-						"spoooky braaaap \\d+"
+						"(spoooky )?braaaap \\d+"
 					]
 				}
 			}
@@ -141,6 +145,24 @@
 					"mode": "contains",
 					"patterns": [
 						"GYPSY CRUSADER"
+					]
+				}
+			}
+		},
+		{
+			"actions": {
+				"mark": [
+					"cheater"
+				]
+			},
+			"description": "sydney",
+			"triggers": {
+				"mode": "match_any",
+				"username_text_match": {
+					"case_sensitive": false,
+					"mode": "regex",
+					"patterns": [
+						"(?!Sydney)S[\u0443y]dn[\u0435e][\u0443y]( ?\\| ?bit.ly\\/\\w*)?"
 					]
 				}
 			}
