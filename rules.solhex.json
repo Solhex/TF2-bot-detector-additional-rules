@@ -193,6 +193,25 @@
 					"racist"
 				]
 			},
+			"description": "White Power Rangers",
+			"triggers": {
+				"mode": "match_any",
+				"username_text_match": {
+					"case_sensitive": false,
+					"mode": "ends_with",
+					"patterns": [
+						"White Power Ranger"
+					]
+				}
+			}
+		},
+		{
+			"actions": {
+				"mark": [
+					"cheater",
+					"racist"
+				]
+			},
 			"description": "NK",
 			"triggers": {
 				"avatar_match": [
