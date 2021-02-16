@@ -174,25 +174,6 @@
 					"racist"
 				]
 			},
-			"description": "Winter Jesus",
-			"triggers": {
-				"mode": "match_any",
-				"username_text_match": {
-					"case_sensitive": false,
-					"mode": "ends_with",
-					"patterns": [
-						"Winter Jesus"
-					]
-				}
-			}
-		},
-		{
-			"actions": {
-				"mark": [
-					"cheater",
-					"racist"
-				]
-			},
 			"description": "White Power Rangers",
 			"triggers": {
 				"mode": "match_any",
@@ -228,49 +209,6 @@
 					"mode": "regex",
 					"patterns": [
 						"[\u5350\u534d]?\\[VALVE\\][\u5350\u534d]?N[\u00edi]gg[\\de]rkill[\\de]r[\u5350\u534d]?"
-					]
-				}
-			}
-		},
-		{
-			"actions": {
-				"mark": [
-					"cheater",
-					"racist"
-				]
-			},
-			"description": "[Link2006] NK",
-			"triggers": {
-				"avatar_match": [
-					{
-						"avatar_hash": "c35571183a64018d1eff01be6867cde37c2d5909"
-					}
-				],
-				"mode": "match_any",
-				"username_text_match": {
-					"case_sensitive": false,
-					"mode": "regex",
-					"patterns": [
-						"\\x4E\\x69\\x67\\x67\\x65\\x72killer",
-						"TF2 PLAYER = APE",
-						"\/id\/heinrichderpro"
-					]
-				}
-			}
-		},
-		{
-			"actions": {
-				"mark": [
-					"cheater"
-				]
-			},
-			"description": "[Link2006] Lmaobox advert",
-			"triggers": {
-				"username_text_match": {
-					"case_sensitive": false,
-					"mode": "contains",
-					"patterns": [
-						"WWW.LMAOBOX.NET"
 					]
 				}
 			}
