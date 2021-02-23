@@ -15,14 +15,22 @@
 					"cheater"
 				]
 			},
-			"description": "Avatar Match",
+			"description": "Avatar and Text Match",
 			"triggers": {
 				"avatar_match": [
 					{
 						"avatar_hash": "18541ade658c70e7d26211eb08e4bf394810bb87"
 					}
-				]
+				],
+				"mode": "match_any",
+				"chatmsg_text_match": {
+					"case_sensitive": false,
+					"mode": "ends_with",
+					"patterns": [
+						"https://matrix.to/#/#bot_rollers:tchncs.de"
+					]
 				}
+			}
 		},
 		{
 			"actions": {
@@ -68,7 +76,7 @@
 					"case_sensitive": false,
 					"mode": "regex",
 					"patterns": [
-						"Matt ((is Donating!)|(Gifts?!))"
+						"Matt ((is Donating!)|(Gifts?!))$"
 					]
 				},
 				"chatmsg_text_match": {
@@ -142,7 +150,7 @@
 				"mode": "match_any",
 				"username_text_match": {
 					"case_sensitive": false,
-					"mode": "contains",
+					"mode": "ends_with",
 					"patterns": [
 						"GYPSY CRUSADER"
 					]
@@ -263,23 +271,6 @@
 						"\u0e4a",
 						"\u0e4e",
 						"\ufff9"
-					]
-				}
-			}
-		},
-		{
-			"actions": {
-				"mark": [
-					"cheater"
-				]
-			},
-			"description": "[Link2006] Broken Namesteal bots",
-			"triggers": {
-				"username_text_match": {
-					"case_sensitive": true,
-					"mode": "contains",
-					"patterns": [
-						"\\ u202C"
 					]
 				}
 			}
