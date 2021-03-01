@@ -69,6 +69,9 @@
 				"avatar_match": [
 					{
 						"avatar_hash": "da0346b6a074bab19e6743eaa4805d4b4ef28820"
+					},
+					{
+						"avatar_hash": "c38eea8519e48a1e385c58ba770a249e3657b46c"
 					}
 				],
 				"mode": "match_any",
@@ -76,7 +79,7 @@
 					"case_sensitive": false,
 					"mode": "regex",
 					"patterns": [
-						"Matt ((is Donating!)|(Gifts?!))$"
+						"Matt ((is Donating!)|(Gifts?!))( \\[BOT\\])?"
 					]
 				},
 				"chatmsg_text_match": {
