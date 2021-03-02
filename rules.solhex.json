@@ -97,19 +97,14 @@
 					"cheater"
 				]
 			},
-			"description": "snooker bots",
+			"description": "omegatronic bots",
 			"triggers": {
-				"avatar_match": [
-					{
-						"avatar_hash": "b2824852210eab28c9c6307111f4b0fcff80c07f"
-					}
-				],
 				"mode": "match_any",
 				"username_text_match": {
 					"case_sensitive": false,
-					"mode": "contains",
+					"mode": "regex",
 					"patterns": [
-						"matchroom.live/snooker"
+						"(\u0e4d?O\u0e4d?M\u0e4d?E\u0e4d?G\u0e4d?A\u0e4d?T\u0e4d?R\u0e4d?O\u0e4d?N\u0e4d?I\u0e4d?C\u0e4d?)$"
 					]
 				}
 			}
@@ -175,25 +170,6 @@
 					"mode": "regex",
 					"patterns": [
 						"(?!Sydney)S[\u0443y]dn[\u0435e][\u0443y]( ?\\| ?bit.ly\\/\\w*)?"
-					]
-				}
-			}
-		},
-		{
-			"actions": {
-				"mark": [
-					"cheater",
-					"racist"
-				]
-			},
-			"description": "White Power Rangers",
-			"triggers": {
-				"mode": "match_any",
-				"username_text_match": {
-					"case_sensitive": false,
-					"mode": "ends_with",
-					"patterns": [
-						"White Power Ranger"
 					]
 				}
 			}
