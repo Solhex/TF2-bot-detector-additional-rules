@@ -199,7 +199,8 @@
 					"case_sensitive": false,
 					"mode": "regex",
 					"patterns": [
-						"[\u5350\u534d]?\\[VALVE\\][\u5350\u534d]?N[\u00edi]gg[\\de]rkill[\\de]r[\u5350\u534d]?"
+						"[\u5350\u534d]?\\[VALVE\\][\u5350\u534d]?N[\u00edi]gg[\\de]rkill[\\de]r[\u5350\u534d]?",
+						"Sugarfree N[\u00edi]ggerkiller"
 					]
 				}
 			}
