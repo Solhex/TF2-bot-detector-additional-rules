@@ -104,7 +104,7 @@
 					"case_sensitive": false,
 					"mode": "regex",
 					"patterns": [
-						"(\u0e4d?O\u0e4d?M\u0e4d?E\u0e4d?G\u0e4d?A\u0e4d?T\u0e4d?R\u0e4d?O\u0e4d?N\u0e4d?I\u0e4d?C\u0e4d?)$"
+						"([\u0e4d\u0e4b]?O[\u0e4d\u0e4b]?M[\u0e4d\u0e4b]?E[\u0e4d\u0e4b]?G[\u0e4d\u0e4b]?A[\u0e4d\u0e4b]?T[\u0e4d\u0e4b]?R[\u0e4d\u0e4b]?O[\u0e4d\u0e4b]?N[\u0e4d\u0e4b]?I[\u0e4d\u0e4b]?C[\u0e4d\u0e4b]?)$"
 					]
 				}
 			}
@@ -152,6 +152,24 @@
 					"mode": "ends_with",
 					"patterns": [
 						"GYPSY CRUSADER"
+					]
+				}
+			}
+		},
+		{
+			"actions": {
+				"mark": [
+					"cheater"
+				]
+			},
+			"description": "Waffen-SS bots",
+			"triggers": {
+				"mode": "match_any",
+				"username_text_match": {
+					"case_sensitive": false,
+					"mode": "regex",
+					"patterns": [
+						"\u200f*W\u200f*a\u200f*f\u200f*f\u200f*e\u200f*n\u200f*-\u200f*S\u200f*S\u200f*"
 					]
 				}
 			}
