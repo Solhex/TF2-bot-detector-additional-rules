@@ -64,7 +64,7 @@
 					"exploiter"
 				]
 			},
-			"description": "mattservice bots",
+			"description": "mattservice Bots",
 			"triggers": {
 				"avatar_match": [
 					{
@@ -79,7 +79,7 @@
 					"case_sensitive": false,
 					"mode": "regex",
 					"patterns": [
-						"Matt ((is Donating!)|(Gifts?!))( \\[BOT\\])?"
+						"(Matt ((is Donating!)|(Gifts?!))( \\[BOT\\])?)$"
 					]
 				},
 				"chatmsg_text_match": {
@@ -97,14 +97,14 @@
 					"cheater"
 				]
 			},
-			"description": "omegatronic bots",
+			"description": "OMEGATRONIC Bots",
 			"triggers": {
 				"mode": "match_any",
 				"username_text_match": {
 					"case_sensitive": false,
 					"mode": "regex",
 					"patterns": [
-						"([\u0e4d\u0e4b\u0e4a]?O[\u0e4d\u0e4b\u0e4a]?M[\u0e4d\u0e4b\u0e4a]?E[\u0e4d\u0e4b\u0e4a]?G[\u0e4d\u0e4b\u0e4a]?A[\u0e4d\u0e4b\u0e4a]?T[\u0e4d\u0e4b\u0e4a]?R[\u0e4d\u0e4b\u0e4a]?O[\u0e4d\u0e4b\u0e4a]?N[\u0e4d\u0e4b\u0e4a]?I[\u0e4d\u0e4b\u0e4a]?C[\u0e4d\u0e4b\u0e4a]?)$"
+						"([\u0e4d\u0e4b\u0e4a\u0e34]?O[\u0e4d\u0e4b\u0e4a\u0e34]?M[\u0e4d\u0e4b\u0e4a\u0e34]?E[\u0e4d\u0e4b\u0e4a\u0e34]?G[\u0e4d\u0e4b\u0e4a\u0e34]?A[\u0e4d\u0e4b\u0e4a\u0e34]?T[\u0e4d\u0e4b\u0e4a\u0e34]?R[\u0e4d\u0e4b\u0e4a\u0e34]?O[\u0e4d\u0e4b\u0e4a\u0e34]?N[\u0e4d\u0e4b\u0e4a\u0e34]?I[\u0e4d\u0e4b\u0e4a\u0e34]?C[\u0e4d\u0e4b\u0e4a\u0e34]?)$"
 					]
 				}
 			}
@@ -115,7 +115,7 @@
 					"cheater"
 				]
 			},
-			"description": "braaaap / shoppy bots",
+			"description": "braaaap / shoppy Bots",
 			"triggers": {
 				"avatar_match": [
 					{
@@ -128,7 +128,7 @@
 					"mode": "regex",
 					"patterns": [
 						"(Scout|Soldier|Pyro|Demo|Heavy|Engie|Medic|Sniper|Spy) Gaming (\\((REAL|NOT A BOT)\\))$",
-						"(spoooky )?braaaap \\d+"
+						"((spoooky )?braaaap \\d+)$"
 					]
 				}
 			}
@@ -139,7 +139,7 @@
 					"cheater"
 				]
 			},
-			"description": "crusader bots",
+			"description": "CRUSADER Bots",
 			"triggers": {
 				"avatar_match": [
 					{
@@ -162,14 +162,14 @@
 					"cheater"
 				]
 			},
-			"description": "Waffen-SS bots",
+			"description": "Waffen-SS Bots",
 			"triggers": {
 				"mode": "match_any",
 				"username_text_match": {
 					"case_sensitive": false,
 					"mode": "regex",
 					"patterns": [
-						"\u200f*W\u200f*a\u200f*f\u200f*f\u200f*e\u200f*n\u200f*-\u200f*S\u200f*S\u200f*"
+						"(\u200f*W\u200f*a\u200f*f\u200f*f\u200f*e\u200f*n\u200f*-\u200f*S\u200f*S\u200f*)$"
 					]
 				}
 			}
@@ -180,14 +180,14 @@
 					"cheater"
 				]
 			},
-			"description": "sydney bots",
+			"description": "Sydney Bots",
 			"triggers": {
 				"mode": "match_any",
 				"username_text_match": {
 					"case_sensitive": false,
 					"mode": "regex",
 					"patterns": [
-						"(?!Sydney)S[\u0443y]dn[\u0435e][\u0443y]( ?\\| ?bit.ly\\/\\w*)?"
+						"((?!Sydney)S[\u0443y]dn[\u0435e][\u0443y]( ?\\| ?bit.ly\\/\\w*)?)$"
 					]
 				}
 			}
@@ -199,7 +199,7 @@
 					"racist"
 				]
 			},
-			"description": "NK",
+			"description": "NK Bots",
 			"triggers": {
 				"avatar_match": [
 					{
@@ -217,8 +217,8 @@
 					"case_sensitive": false,
 					"mode": "regex",
 					"patterns": [
-						"[\u5350\u534d]?\\[VALVE\\][\u5350\u534d]?N[\u00edi]gg[\\de]rkill[\\de]r[\u5350\u534d]?",
-						"Sugarfree N[\u00edi]ggerkiller"
+						"([\u5350\u534d]?\\[VALVE\\][\u5350\u534d]?N[\u00edi]gg[\\de]rkill[\\de]r[\u5350\u534d]?)$",
+						"(Sugarfree N[\u00edi]ggerkiller)$"
 					]
 				}
 			}
@@ -260,25 +260,17 @@
 					"racist"
 				]
 			},
-			"description": "[Moeb]Racistism detected",
+			"description": "Racistism Detected",
 			"triggers": {
 				"chatmsg_text_match": {
 					"case_sensitive": false,
 					"mode": "regex",
 					"patterns": [
-						"\\w*N\udb40\udc21\udb40\udc21IGGE\udb40\udc21\udb40\udc21R\\w*",
-						"\\w*\u0274\u026a\u0262\u0262\u1d07\u0280\\w*",
-						"\\w*n\u0456gg\u0435r\\w*",
-						"\\w*N\u00cdGGER\\w*",
-						"\\w*nigg\u0435r\\w*",
-						"\\w*N1GG3R\\w*",
-						"\\w*nigger\\w*",
-						"\\w*nigg4\\w*",
-						"\\w*niggz\\w*",
-						"niggers"
+						"\\w*n[i1]gg[e3]r\\w*",
+						"\\s*n[i1]gg[e3]rs?\\s*",
+						"n[i1]gg[e3]rs"
 					]
-				},
-				"mode": "match_any"
+				}
 			}
 		}
 	]
