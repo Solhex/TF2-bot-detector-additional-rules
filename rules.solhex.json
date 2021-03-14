@@ -97,7 +97,7 @@
 					"case_sensitive": false,
 					"mode": "regex",
 					"patterns": [
-						"(Matt ((is Donating!)|(Gifts?!))( \\[BOT\\])?)$"
+						"(Matt ((is Donating!)|(Gifts?!)|(Giveaway!))( \\[BOT\\])?)$"
 					]
 				},
 				"chatmsg_text_match": {
