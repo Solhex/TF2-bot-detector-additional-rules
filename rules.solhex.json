@@ -68,9 +68,9 @@
 				"mode": "match_any",
 				"username_text_match": {
 					"case_sensitive": false,
-					"mode": "contains",
+					"mode": "regex",
 					"patterns": [
-						"tacobot.tf"
+						"(?<![f\\*][u\\*][c\\*][k\\*] ?|screw ?)tacobot\\.tf$"
 					]
 				}
 			}
