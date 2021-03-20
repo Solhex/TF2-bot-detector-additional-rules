@@ -146,7 +146,8 @@
 					"mode": "regex",
 					"patterns": [
 						"(Scout|Soldier|Pyro|Demo|Heavy|Engie|Medic|Sniper|Spy) Gaming (\\((REAL|NOT A BOT)\\))$",
-						"((spoooky )?braaaap \\d+)$"
+						"((spoooky )?braaaap \\d+)$",
+						"(shoppy.gg/@d3fc0n6)$"
 					]
 				}
 			}
@@ -235,8 +236,9 @@
 					"case_sensitive": false,
 					"mode": "regex",
 					"patterns": [
-						"([\u5350\u534d]?\\[VALVE\\][\u5350\u534d]?N[\u00edi]gg[\\de]rkill[\\de]r[\u5350\u534d]?)$",
-						"(Sugarfree N[\u00edi]ggerkiller)$"
+						"(([\u5350\u534d]?\\[VALVE\\])?\u16cb*[\u5350\u534d]?N[\u00edi]gg[\\de]rkill[\\de]r[\u5350\u534d]?\u16cb*)$",
+						"(Sugarfree N[\u00edi]ggerkiller)$",
+						"(K[i\u2148]ng N[i\u2148]ggerk[i\u2148]ller)$"
 					]
 				}
 			}
@@ -285,8 +287,9 @@
 					"mode": "regex",
 					"patterns": [
 						"\\w*n[i1]gg[e3]r\\w*",
-						"\\s*n[i1]gg[e3]rs?\\s*",
-						"n[i1]gg[e3]rs"
+						"\\s*n[i1]gg[e3]r[s5]?\\s*",
+						"n[i1]gg[e3]r[s5]?",
+						"n[i1]gr[o0][s5]?"
 					]
 				}
 			}
