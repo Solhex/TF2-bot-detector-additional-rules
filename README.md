@@ -28,7 +28,7 @@ moebkun's [rules.beta.json][moebkun-list]
 
 ### Recommended lists
 
-Wget's [wget-biglist][biglist]
+Wget's [biglist][wget-biglist]
 
 <!-- Links -->
 [moebkun-list]:https://github.com/moebkun/lists
