@@ -60,24 +60,6 @@
 		{
 			"actions": {
 				"mark": [
-					"exploiter"
-				]
-			},
-			"description": "Tacobot.tf",
-			"triggers": {
-				"mode": "match_any",
-				"username_text_match": {
-					"case_sensitive": false,
-					"mode": "regex",
-					"patterns": [
-						"(?<![f\\*][u\\*][c\\*][k\\*] ?|screw ?)tacobot\\.tf$"
-					]
-				}
-			}
-		},
-		{
-			"actions": {
-				"mark": [
 					"cheater",
 					"exploiter"
 				]
