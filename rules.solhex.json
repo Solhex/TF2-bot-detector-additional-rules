@@ -231,27 +231,17 @@
 					"cheater"
 				]
 			},
-			"description": "[Link2006] NameSteal2",
+			"description": "Additional Namestealing Bots Rules",
 			"triggers": {
 				"username_text_match": {
 					"case_sensitive": false,
 					"mode": "contains",
 					"patterns": [
-						"\u205f",
-						"\u200f",
-						"\u200e",
-						"\u200d",
-						"\u200c",
-						"\u200b",
-						"\u2060",
-						"\u202a",
-						"\u202c",
 						"\u202d",
-						"\u2061",
-						"\ufeff",
-						"\u0e4a",
-						"\u0e4e",
-						"\ufff9"
+						"\u202e",
+						"\u202f",
+						"\u205f",
+						"\u0e4a"
 					]
 				}
 			}
