@@ -99,6 +99,11 @@
 			},
 			"description": "OMEGATRONIC Bots",
 			"triggers": {
+				"avatar_match": [
+					{
+						"avatar_hash": "18cdf406fa44f1229526e2d6640b8c55d065612c"
+					}
+				],
 				"mode": "match_any",
 				"username_text_match": {
 					"case_sensitive": false,
