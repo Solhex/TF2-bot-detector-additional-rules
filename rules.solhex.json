@@ -7,5 +7,336 @@
 		"description": "Solhex's rules list for TF2 Bot Detector, most of the code used here is from Link2006's and moebkun's rule list (please use theirs as I guarantee its way better) which are marked with their username.",
 		"title": "Modified rules list",
 		"update_url": "https://gist.githubusercontent.com/Solhex/1f24132b235dcb9daffb2ebdc1d4769c/raw/rules.solhex.json"
-	}
+	},
+	"rules": [
+		{
+			"actions": {
+				"mark": [
+					"cheater"
+				]
+			},
+			"description": "Avatar and Text Match",
+			"triggers": {
+				"avatar_match": [
+					{
+						"avatar_hash": "18541ade658c70e7d26211eb08e4bf394810bb87"
+					}
+				],
+				"chatmsg_text_match": {
+					"case_sensitive": false,
+					"mode": "ends_with",
+					"patterns": [
+						"https://matrix.to/#/#bot_rollers:tchncs.de"
+					]
+				},
+				"mode": "match_any"
+			}
+		},
+		{
+			"actions": {
+				"mark": [
+					"suspicious"
+				]
+			},
+			"description": "King of I Love You",
+			"triggers": {
+				"chatmsg_text_match": {
+					"case_sensitive": false,
+					"mode": "contains",
+					"patterns": [
+						"https://steamcommunity.com/groups/snipermainunited"
+					]
+				},
+				"mode": "match_any",
+				"username_text_match": {
+					"case_sensitive": false,
+					"mode": "contains",
+					"patterns": [
+						"\u2665King of \"\u2665I Love You\u2665\" b"
+					]
+				}
+			}
+		},
+		{
+			"actions": {
+				"mark": [
+					"cheater",
+					"exploiter"
+				]
+			},
+			"description": "mattservice Bots",
+			"triggers": {
+				"avatar_match": [
+					{
+						"avatar_hash": "da0346b6a074bab19e6743eaa4805d4b4ef28820"
+					},
+					{
+						"avatar_hash": "c38eea8519e48a1e385c58ba770a249e3657b46c"
+					}
+				],
+				"chatmsg_text_match": {
+					"case_sensitive": false,
+					"mode": "contains",
+					"patterns": [
+						"HOW TO ADD: Steam->Community->Find People-> Matt Gift!"
+					]
+				},
+				"mode": "match_any",
+				"username_text_match": {
+					"case_sensitive": false,
+					"mode": "regex",
+					"patterns": [
+						"(Matt ((is Donating!)|(Gifts?!)|(Giveaway!))( \\[BOT\\])?)$"
+					]
+				}
+			}
+		},
+		{
+			"actions": {
+				"mark": [
+					"cheater"
+				]
+			},
+			"description": "Crazy Frog bots",
+			"triggers": {
+				"username_text_match": {
+					"case_sensitive": false,
+					"mode": "regex",
+					"patterns": [
+						"((french|racist)? ?((cr?[a@]?z?[ye])|annoying) ?f[ro]+g*!?( in da house)?)$",
+						"(Tiny)? Frog Crazy",
+						"Welcome to Crazy Fortress 2!",
+						"A Blast From The Past"
+					]
+				}
+			}
+		},
+		{
+			"actions": {
+				"mark": [
+					"cheater"
+				]
+			},
+			"description": "DoesHotter bots",
+			"triggers": {
+				"avatar_match": [
+					{
+						"avatar_hash": "69eea37cc416c5ba389b276335798c1111bebbef"
+					}
+				],
+				"mode": "match_all",
+				"username_text_match": {
+					"case_sensitive": false,
+					"mode": "ends_with",
+					"patterns": [
+						"DoesHotter"
+					]
+				}
+			}
+		},
+		{
+			"actions": {
+				"mark": [
+					"cheater"
+				]
+			},
+			"description": "OMEGATRONIC Bots",
+			"triggers": {
+				"avatar_match": [
+					{
+						"avatar_hash": "18cdf406fa44f1229526e2d6640b8c55d065612c"
+					},
+					{
+						"avatar_hash": "1a21c16ebb6d508fe427888156b57400e940dd50"
+					},
+					{
+						"avatar_hash": "33ba7af3addb7ae4ccc72143c7d741d1030d7e17"
+					}
+				],
+				"mode": "match_any",
+				"username_text_match": {
+					"case_sensitive": false,
+					"mode": "regex",
+					"patterns": [
+						"([\u0e4d\u0e4b\u0e4a\u0e34\u0e37\u0e47]?O[\u0e4d\u0e4b\u0e4a\u0e34\u0e37\u0e47]?M[\u0e4d\u0e4b\u0e4a\u0e34\u0e37\u0e47]?E[\u0e4d\u0e4b\u0e4a\u0e34\u0e37\u0e47]?G[\u0e4d\u0e4b\u0e4a\u0e34\u0e37\u0e47]?A[\u0e4d\u0e4b\u0e4a\u0e34\u0e37\u0e47]?T[\u0e4d\u0e4b\u0e4a\u0e34\u0e37\u0e47]?R[\u0e4d\u0e4b\u0e4a\u0e34\u0e37\u0e47]?O[\u0e4d\u0e4b\u0e4a\u0e34\u0e37\u0e47]?N[\u0e4d\u0e4b\u0e4a\u0e34\u0e37\u0e47]?I[\u0e4d\u0e4b\u0e4a\u0e34\u0e37\u0e47]?C[\u0e4d\u0e4b\u0e4a\u0e34\u0e37\u0e47]?)$",
+						"(\\[VALVE\\] OMEGATRICKY)$"
+					]
+				}
+			}
+		},
+		{
+			"actions": {
+				"mark": [
+					"cheater"
+				]
+			},
+			"description": "braaaap / shoppy Bots",
+			"triggers": {
+				"avatar_match": [
+					{
+						"avatar_hash": "3e28feb1e131d1724f94cbf486edd721ccd459a0"
+					}
+				],
+				"mode": "match_any",
+				"username_text_match": {
+					"case_sensitive": false,
+					"mode": "regex",
+					"patterns": [
+						"(Scout|Soldier|Pyro|Demo|Heavy|Engie|Medic|Sniper|Spy) Gaming (\\((REAL|NOT A BOT)\\))$",
+						"((spoooky )?braaaap \\d+)$",
+						"(shoppy.gg/@d3fc0n6)$"
+					]
+				}
+			}
+		},
+		{
+			"actions": {
+				"mark": [
+					"cheater"
+				]
+			},
+			"description": "Waffen-SS Bots",
+			"triggers": {
+				"username_text_match": {
+					"case_sensitive": false,
+					"mode": "regex",
+					"patterns": [
+						"(\u200f*W\u200f*a\u200f*f\u200f*f\u200f*e\u200f*n\u200f*-\u200f*S\u200f*S\u200f*)$"
+					]
+				}
+			}
+		},
+		{
+			"actions": {
+				"mark": [
+					"cheater"
+				]
+			},
+			"description": "Sydney Bots",
+			"triggers": {
+				"username_text_match": {
+					"case_sensitive": false,
+					"mode": "regex",
+					"patterns": [
+						"((?!Sydney)S[\u0443y]dn[\u0435e][\u0443y]( ?\\| ?bit.ly\\/\\w*)?)$"
+					]
+				}
+			}
+		},
+		{
+			"actions": {
+				"mark": [
+					"cheater",
+					"racist"
+				]
+			},
+			"description": "NK Bots",
+			"triggers": {
+				"avatar_match": [
+					{
+						"avatar_hash": "a03023b2361fb9aa7a94cf515425236255844c75"
+					},
+					{
+						"avatar_hash": "2e851a57882a08948474f149b8f5a61057529f9d"
+					},
+					{
+						"avatar_hash": "8a67785925d68f5c4d6dc21b1231897da824ff37"
+					}
+				],
+				"mode": "match_any",
+				"username_text_match": {
+					"case_sensitive": false,
+					"mode": "regex",
+					"patterns": [
+						"(([\u5350\u534d]?\\[VALVE\\])?\u16cb*[\u5350\u534d]?N[\u00edi]gg[\\de]rkill[\\de]r[\u5350\u534d]?\u16cb*)$",
+						"(Sugarfree N[\u00edi]ggerkiller)$",
+						"(K[i\u2148]ng N[i\u2148]ggerk[i\u2148]ller)$"
+					]
+				}
+			}
+		},
+		{
+			"actions": {
+				"mark": [
+					"cheater"
+				]
+			},
+			"description": "Short best bots",
+			"triggers": {
+				"avatar_match": [
+					{
+						"avatar_hash": "a657dc678c7208986a31316ac52206e1b4175236"
+					}
+				],
+				"mode": "match_any",
+				"username_text_match": {
+					"case_sensitive": false,
+					"mode": "regex",
+					"patterns": [
+						"(Anal (ASPIRINA1000|Skeevy|Sexmann|Bence99|1Nasenmensch|R\u0443?\u0430?n G\u043e?sling!?))$"
+					]
+				}
+			}
+		},
+		{
+			"actions": {
+				"mark": [
+					"cheater"
+				]
+			},
+			"description": "Nemo Bots",
+			"triggers": {
+				"username_text_match": {
+					"case_sensitive": false,
+					"mode": "regex",
+					"patterns": [
+						"((OG )?Fuck (\u0e4a\u202d)?Nemo(\u0e4a\u202d)? ?(v2 #\\d+)?(#FuckNemoV2Update)?)$"
+					]
+				}
+			}
+		},
+		{
+			"actions": {
+				"mark": [
+					"cheater"
+				]
+			},
+			"description": "Additional Namestealing Bots Rules",
+			"triggers": {
+				"username_text_match": {
+					"case_sensitive": false,
+					"mode": "contains",
+					"patterns": [
+						"\u202d",
+						"\u202e",
+						"\u202f",
+						"\u205f",
+						"\u0e4a",
+						"\u0e4b",
+						"\u0e31"
+					]
+				}
+			}
+		},
+		{
+			"actions": {
+				"mark": [
+					"racist"
+				]
+			},
+			"description": "Racistism Detected",
+			"triggers": {
+				"chatmsg_text_match": {
+					"case_sensitive": false,
+					"mode": "regex",
+					"patterns": [
+						"\\w*n[i1]gg[e3]r\\w*",
+						"\\s*n[i1]gg[e3]r[s5]?\\s*",
+						"n[i1]gg[e3]r[s5]?",
+						"n[i1]gr[o0][s5]?"
+					]
+				}
+			}
+		}
+	]
 }
