@@ -6,7 +6,7 @@
 		],
 		"description": "Solhex's rules list for TF2 Bot Detector, most of the code used here is from Link2006's and moebkun's rule list (please use theirs as I guarantee its way better) which are marked with their username.",
 		"title": "Modified rules list",
-		"update_url": "https://gist.githubusercontent.com/Solhex/1f24132b235dcb9daffb2ebdc1d4769c/raw/rules.solhex.json"
+		"update_url": "https://raw.githubusercontent.com/Solhex/TF2-bot-detector-additional-rules/main/rules.solhex.json"
 	},
 	"rules": [
 		{
@@ -97,6 +97,23 @@
 					"cheater"
 				]
 			},
+			"description": "Philosophy Bots",
+			"triggers": {
+				"chatmsg_text_match": {
+					"case_sensitive": false,
+					"mode": "contains",
+					"patterns": [
+						"gnu.org/philosophy"
+					]
+				}
+			}
+		},
+		{
+			"actions": {
+				"mark": [
+					"cheater"
+				]
+			},
 			"description": "Crazy Frog bots",
 			"triggers": {
 				"username_text_match": {
@@ -158,7 +175,7 @@
 					"case_sensitive": false,
 					"mode": "regex",
 					"patterns": [
-						"([\u0e4d\u0e4b\u0e4a\u0e34\u0e37\u0e47\u0e48\u0e4e\u0e31\u0e3a]?O[\u0e4d\u0e4b\u0e4a\u0e34\u0e37\u0e47\u0e48\u0e4e\u0e31\u0e3a]?M[\u0e4d\u0e4b\u0e4a\u0e34\u0e37\u0e47\u0e48\u0e4e\u0e31\u0e3a]?E[\u0e4d\u0e4b\u0e4a\u0e34\u0e37\u0e47\u0e48\u0e4e\u0e31\u0e3a]?G[\u0e4d\u0e4b\u0e4a\u0e34\u0e37\u0e47\u0e48\u0e4e\u0e31\u0e3a]?A[\u0e4d\u0e4b\u0e4a\u0e34\u0e37\u0e47\u0e48\u0e4e\u0e31\u0e3a]?T[\u0e4d\u0e4b\u0e4a\u0e34\u0e37\u0e47\u0e48\u0e4e\u0e31\u0e3a]?R[\u0e4d\u0e4b\u0e4a\u0e34\u0e37\u0e47\u0e48\u0e4e\u0e31\u0e3a]?O[\u0e4d\u0e4b\u0e4a\u0e34\u0e37\u0e47\u0e48\u0e4e\u0e31\u0e3a]?N[\u0e4d\u0e4b\u0e4a\u0e34\u0e37\u0e47\u0e48\u0e4e\u0e31\u0e3a]?I[\u0e4d\u0e4b\u0e4a\u0e34\u0e37\u0e47\u0e48\u0e4e\u0e31\u0e3a]?C[\u0e4d\u0e4b\u0e4a\u0e34\u0e37\u0e47\u0e48\u0e4e\u0e31\u0e3a]?)$",
+						"([\u0e4d\u0e4b\u0e4a\u0e34\u0e35\u0e37\u0e47\u0e48\u0e4e\u0e31\u0e3a]?O[\u0e4d\u0e4b\u0e4a\u0e34\u0e35\u0e37\u0e47\u0e48\u0e4e\u0e31\u0e3a]?M[\u0e4d\u0e4b\u0e4a\u0e34\u0e35\u0e37\u0e47\u0e48\u0e4e\u0e31\u0e3a]?E[\u0e4d\u0e4b\u0e4a\u0e34\u0e35\u0e37\u0e47\u0e48\u0e4e\u0e31\u0e3a]?G[\u0e4d\u0e4b\u0e4a\u0e34\u0e35\u0e37\u0e47\u0e48\u0e4e\u0e31\u0e3a]?A[\u0e4d\u0e4b\u0e4a\u0e34\u0e35\u0e37\u0e47\u0e48\u0e4e\u0e31\u0e3a]?T[\u0e4d\u0e4b\u0e4a\u0e34\u0e35\u0e37\u0e47\u0e48\u0e4e\u0e31\u0e3a]?R[\u0e4d\u0e4b\u0e4a\u0e34\u0e35\u0e37\u0e47\u0e48\u0e4e\u0e31\u0e3a]?O[\u0e4d\u0e4b\u0e4a\u0e34\u0e35\u0e37\u0e47\u0e48\u0e4e\u0e31\u0e3a]?N[\u0e4d\u0e4b\u0e4a\u0e34\u0e35\u0e37\u0e47\u0e48\u0e4e\u0e31\u0e3a]?I[\u0e4d\u0e4b\u0e4a\u0e34\u0e35\u0e37\u0e47\u0e48\u0e4e\u0e31\u0e3a]?C[\u0e4d\u0e4b\u0e4a\u0e34\u0e35\u0e37\u0e47\u0e48\u0e4e\u0e31\u0e3a]?)$",
 						"(\\[VALVE\\] OMEGATRICKY)$"
 					]
 				}
